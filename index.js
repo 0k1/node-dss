@@ -46,7 +46,7 @@ router.post('/data/:id', (req, res) => {
 
   router.__dataStore[deviceId].push(req.body)
 
-  res.statusCode = 200
+  res.statusCode = 400
   res.end()
 })
 
